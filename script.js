@@ -42,3 +42,47 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+// File management functions
+function createFile() {
+    const fileName = prompt('Enter file name:');
+    if (fileName) {
+        localStorage.setItem(fileName, '');
+        alert('File created!');
+    }
+}
+
+function loadFile() {
+    const fileName = prompt('Enter file name to load:');
+    if (fileName) {
+        const fileContent = localStorage.getItem(fileName);
+        if (fileContent !== null) {
+            document.getElementById('file-content').value = fileContent;
+            alert('File loaded!');
+        } else {
+            alert('File not found!');
+        }
+    }
+}
+
+function saveFile() {
+    const fileName = prompt('Enter file name to save:');
+    if (fileName) {
+        const fileContent = document.getElementById('file-content').value;
+        localStorage.setItem(fileName, fileContent);
+        alert('File saved!');
+    }
+}
+
+function editFile() {
+    const fileName = prompt('Enter file name to edit:');
+    if (fileName) {
+        const fileContent = localStorage.getItem(fileName);
+        if (fileContent !== null) {
+            document.getElementById('file-content').value = fileContent;
+            alert('File loaded for editing!');
+        } else {
+            alert('File not found!');
+        }
+    }
+}
