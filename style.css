@@ -64,6 +64,7 @@ body, html {
     left: 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
     padding: 0 10px;
+    box-sizing: border-box; /* Ensure padding is included in element's total width */
 }
 
 #start-button {
@@ -76,4 +77,5 @@ body, html {
 
 #clock {
     font-size: 16px;
+    white-space: nowrap; /* Prevent clock text from wrapping */
 }
