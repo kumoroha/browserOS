@@ -63,7 +63,7 @@ body, html {
     bottom: 0;
     left: 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
+    padding: 0 15px;
     box-sizing: border-box; /* Ensure padding is included in element's total width */
 }
 
@@ -73,11 +73,10 @@ body, html {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    flex-shrink: 0; /* Prevent the button from shrinking */
+    margin-right: auto; /* Push the button to the left */
 }
 
 #clock {
     font-size: 16px;
     white-space: nowrap; /* Prevent clock text from wrapping */
-    flex-shrink: 0; /* Prevent the clock from shrinking */
 }
