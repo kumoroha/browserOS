@@ -24,6 +24,20 @@
         <span id="clock"></span>
     </div>
 
+    <div id="file-manager" class="window">
+        <div class="title-bar">
+            <span class="title">File Manager</span>
+            <button class="close-button" onclick="closeWindow('file-manager')">X</button>
+        </div>
+        <div class="window-content">
+            <button onclick="createFile()">Create File</button>
+            <button onclick="loadFile()">Load File</button>
+            <button onclick="saveFile()">Save File</button>
+            <button onclick="editFile()">Edit File</button>
+            <textarea id="file-content" rows="10" cols="50"></textarea>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
